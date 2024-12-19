@@ -1,0 +1,62 @@
+#include <stdio.h>
+
+int addition(int a,int b)
+{
+	return a+b;
+}
+
+int sub(int a,int b)
+{
+	return a-b;
+}
+
+int divide(int a,int b)
+{
+	return a/b;
+}
+
+int mod(int a,int b)
+{
+    return (a*b)/100;
+}
+int multiply(int a,int b)
+{
+	return a*b;
+}
+
+int main()
+{
+	int choice,a,b;
+		printf("Enter two values :\n");
+                scanf("%d%d",&a,&b);
+	printf("Press 1 for addition\nPress 2 for substraction\nPress3 for divide\nPress 4 for multiply\nPress 5 for moduler\n");
+	scanf("%d",&choice);
+             
+	switch(choice)
+	{
+         case 1:
+         printf("%d",addition(a,b));
+         break;
+         
+         case 2:
+         printf("%d",sub(a,b));
+         break;
+         
+         case 3:
+         printf("%d",multiply(a,b));
+         break;
+         
+         case 4:
+         printf("%d",divide(a,b));
+         break;
+         
+         case 5:
+         printf("%d",mod(a,b));
+         break;
+         
+         default:
+         printf("Invalid choice");
+	}
+
+	return 0;
+}
